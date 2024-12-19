@@ -1,0 +1,75 @@
+name: tng_ehr
+description: "A new Flutter project." 
+publish_to: 'none'  
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+workspace:
+  - packages/share/base_project 
+  - packages/share/tng_share 
+  - packages/share/tng_database 
+  - packages/domain/hr_portal   
+  - packages/domain/news   
+  - packages/domain/users   
+dependencies:
+  flutter:
+    sdk: flutter  
+
+ 
+  base_project:
+    path: "packages/share/base_project" 
+  tng_share:
+    path: "packages/share/tng_share" 
+  tng_database:
+    path: "packages/share/tng_database" 
+  hr_portal:
+    path: "packages/domain/hr_portal" 
+  news:
+    path: "packages/domain/news" 
+  users:
+    path: "packages/domain/users" 
+  # intl: ^0.19.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0 
+  json_serializable: ^6.8.0
+  retrofit_generator: ^9.1.5
+  freezed: ^2.5.7
+  build_runner: ^2.4.13
+  flutter_flavorizr: ^2.2.3
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets: 
+    - assets/theme/ 
+ 
+          
+# flutter_intl:
+#   enabled: true
+
+flavorizr:
+  flavors:
+    dev:
+      app:
+        name: "[Dev]TNG eHR "
+      android:
+        applicationId: "com.trungnguyenlegend.tngEhrDev"
+      ios:
+        bundleId: "com.trungnguyenlegend.tngEhrDev"
+    prod:
+      app:
+        name: "TNG eHR"
+      android:
+        applicationId: "com.trungnguyenlegend.tngEhr"
+        icon: "assets/logo/logo_lt.png"
+      ios:
+        bundleId: "com.trungnguyenlegend.tngEhr"
+        icon: "assets/logo/logo_lt.png"

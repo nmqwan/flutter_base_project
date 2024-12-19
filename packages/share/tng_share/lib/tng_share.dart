@@ -1,0 +1,1 @@
+export 'languages/generated/l10n.dart';

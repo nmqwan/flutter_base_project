@@ -1,0 +1,6 @@
+shorebird release android --target lib/main_dev.dart --  --no-tree-shake-icons
+---> tuong duong version flutter tren appstore/CHPlay
+
+---> Moi lan hot fix chay lenh patch (chọn version như chplay/appstore hien tai)
+shorebird patch android  --target lib/main_dev.dart --  --no-tree-shake-icons
+ 
